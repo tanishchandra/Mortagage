@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact us </title>
+        <style>
+            *
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1610307766999-01f45d259959?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    background-position:center;
+    font-family: 'Poppins', sans-serif;
+}
+.container
+{
+    width: 80%;
+    margin: 50px auto;
+    color: #fff;
+}
+.contact-box
+{
+    background: #fff;
+    display: flex;
+}
+.contact-left
+{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right
+{
+    flex-basis: 40%;
+    padding: 40px;
+    background: #4c4b53;
+    color: #fff;
+}
+h1
+{
+    margin-bottom: 10px;   
+}
+.container p
+{
+    margin-bottom: 40px;
+}
+.input-row
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group
+{
+    flex-basis: 45%;
+}
+input
+{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+} 
+textarea
+{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label
+{
+    margin-bottom: 6px;
+    display: block;
+    color: #4c4b53;
+}
+button
+{
+    background: #4c4b53;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+.contact-left h3
+{
+    color: #4c4b53;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-right h3
+{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child
+{
+    padding-right: 20px;
+}
+tr td
+{
+    padding-top: 20px;
+}
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Connect With us</h1>
+            <p>We would love to respond to your queries and help you succeed.<br> Feel free to get in touch with us.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your request</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="john Amendo">
+                            </div>
+                        
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="+91 1234567890">
+                            </div>
+                        </div>    
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="johnAmendo@gamil.com">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="Product Demo">
+                            </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                    </form>
+                    <button type="submit">SEND</button>
+                </div>
+                    <div class="contact-right">
+                        <h3>Reach us</h3>
+                        <table>
+                            <tr>
+                                <td>Email</td>
+                                <td>mvijayasrivarsha0608@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>+91 9100042417</td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>Green Fields, Vaddeswaram, Mangalagiri, Andhra Pradesh, 522502, India</td>
+                            </tr>
+                        </table>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

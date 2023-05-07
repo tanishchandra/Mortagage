@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title>
+            Mortgage & Pawnbroker age Systems
+        </title>
+        <style>
+            *
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1610307766999-01f45d259959?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    background-position: center;
+    
+    font-family: sans-serif;
+}
+.menu-bar
+{
+    background: transparent;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #0b0b0b;
+}
+.menu-bar ul li
+{
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #0c0c0c;
+}
+.active, .menu-bar ul li:hover
+{
+    background: transparent;
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right: 4px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: contents;
+    position: absolute;
+    background: transparent;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: aquamarine;
+}
+.content 
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    max-width: 1000px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+.content h1
+{
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.content h2
+{
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About us</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="{% url 'Ourteam' %}">Team</a></li>
+                    </ul>                    
+                </div>
+            </li>
+            <li><a href="#">Services</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="{% url 'mortage' %}">Mortgage Calculator</a></li>
+                        <li><a href="{% url 'currency' %}">currency converter</a></li>
+                        <li><a href="{% url 'pawnbrokerage' %}">Pawnbroker age system</a></li>
+                    </ul>                    
+                </div></li>
+            <li><a href="{% url 'FAQ' %}">FAQ</a></li>
+            <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+            <li><a href="#">Account</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="{% url 'signup' %}">Signup</a></li>
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                    </ul> </li>
+
+        </div>
+        <div class="content">
+            <h1>Welcome to the Website</h1>
+            <h2>Mortgage & Pawnbroker age Systems</h2>
+        </div>
+        </ul>
+    </div>
+    </body>
+</html>
